@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(const MyApp());
+void main() {
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -9,68 +11,128 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: _title,
-      home: MyStatefulWidget(),
-    );
-  }
-}
-
-class MyStatefulWidget extends StatefulWidget {
-  const MyStatefulWidget({super.key});
-
-  @override
-  State<MyStatefulWidget> createState() => _MyStatefulWidgetState();
-}
-
-class _MyStatefulWidgetState extends State<MyStatefulWidget> {
-  int _count = 0;
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Sample Code'),
-      ),
-      body: Center(
-          child: GridView.count(
-        primary: false,
-        padding: const EdgeInsets.all(20),
-        crossAxisSpacing: 10,
-        mainAxisSpacing: 10,
-        crossAxisCount: 2,
-        children: <Widget>[
-          Container(
-              padding: const EdgeInsets.all(8),
-              color: Color.fromARGB(255, 157, 105, 241),
-              child: Image.network('C:\flutter\img\Goku.webp')),
-          Container(
-            padding: const EdgeInsets.all(8),
-            color: Color.fromARGB(255, 164, 94, 250),
-            child: const Text('Heed not the rabble'),
+    return MaterialApp(
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: Scaffold(
+          appBar: AppBar(
+            title: Text('Sample Code'),
           ),
-          Container(
-            padding: const EdgeInsets.all(8),
-            color: Color.fromARGB(255, 137, 48, 246),
-            child: const Text('Sound of screams but the'),
+          body: Container(
+            child: Row(
+              mainAxisSize: MainAxisSize.max,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                Container(
+                  child: Column(
+                    children: [
+                      TextButton(
+                        style: TextButton.styleFrom(
+                          backgroundColor: Color.fromARGB(221, 185, 219, 249),
+                        ),
+                        onPressed: () {
+                          var t = DateTime.now();
+                          print(t);
+                        },
+                        child: Row(
+                          children: <Widget>[
+                            Icon(Icons.access_time),
+                            Container(
+                              height: 120,
+                              width: 100,
+                              decoration: BoxDecoration(
+                                  border: Border.all(
+                                      color: Color.fromARGB(255, 10, 90, 238))),
+                              child: FittedBox(
+                                child: Text(
+                                  "I",
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                      color: Color.fromARGB(255, 3, 134, 241)),
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  child: Column(
+                    children: [
+                      TextButton(
+                        style: TextButton.styleFrom(
+                          backgroundColor: Color.fromARGB(221, 185, 219, 249),
+                        ),
+                        onPressed: () {
+                          var t = DateTime.now();
+                          print(t);
+                        },
+                        child: Row(
+                          children: <Widget>[
+                            Icon(Icons.access_time),
+                            Container(
+                              height: 120,
+                              width: 100,
+                              decoration: BoxDecoration(
+                                  border: Border.all(
+                                      color: Color.fromARGB(255, 10, 90, 238))),
+                              child: FittedBox(
+                                child: Text(
+                                  "T",
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                      color: Color.fromARGB(255, 3, 134, 241)),
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  child: Column(
+                    children: [
+                      TextButton(
+                        style: TextButton.styleFrom(
+                          backgroundColor: Color.fromARGB(221, 185, 219, 249),
+                        ),
+                        onPressed: () {
+                          var t = DateTime.now();
+                          print(t);
+                        },
+                        child: Row(
+                          children: <Widget>[
+                            Icon(Icons.access_time),
+                            Container(
+                              height: 120,
+                              width: 100,
+                              decoration: BoxDecoration(
+                                  border: Border.all(
+                                      color: Color.fromARGB(255, 10, 90, 238))),
+                              child: FittedBox(
+                                child: Text(
+                                  "C",
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                      color: Color.fromARGB(255, 3, 134, 241)),
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ),
-          Container(
-            padding: const EdgeInsets.all(8),
-            color: Color.fromARGB(255, 113, 35, 238),
-            child: const Text('Who scream'),
-          ),
-          Container(
-            padding: const EdgeInsets.all(8),
-            color: Color.fromARGB(255, 66, 0, 124),
-            child: const Text('Revolution is coming...'),
-          ),
-          Container(
-            padding: const EdgeInsets.all(8),
-            color: Color.fromARGB(255, 35, 1, 71),
-            child: const Text('Revolution, they...'),
-          ),
-        ],
-      )),
-    );
+        ));
   }
 }
