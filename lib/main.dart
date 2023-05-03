@@ -18,117 +18,514 @@ class MyApp extends StatelessWidget {
         ),
         home: Scaffold(
           appBar: AppBar(
-            title: Text('Sample Code'),
+            title: Text('Parcial Oskar Carrillo'),
           ),
           body: Container(
-            child: Row(
-              mainAxisSize: MainAxisSize.max,
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
-                Container(
-                  child: Column(
-                    children: [
-                      TextButton(
-                        style: TextButton.styleFrom(
-                          backgroundColor: Color.fromARGB(221, 185, 219, 249),
-                        ),
-                        onPressed: () {
-                          var t = DateTime.now();
-                          print(t);
-                        },
-                        child: Row(
-                          children: <Widget>[
-                            Icon(Icons.access_time),
-                            Container(
-                              height: 120,
-                              width: 100,
-                              decoration: BoxDecoration(
-                                  border: Border.all(
-                                      color: Color.fromARGB(255, 10, 90, 238))),
-                              child: FittedBox(
-                                child: Text(
-                                  "I",
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                      color: Color.fromARGB(255, 3, 134, 241)),
-                                ),
-                              ),
-                            )
-                          ],
-                        ),
+            child: Column(
+              children: [
+                Row(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Container(
+                      child: Column(
+                        children: [
+                          TextButton(
+                            style: TextButton.styleFrom(
+                              backgroundColor:
+                                  Color.fromARGB(221, 185, 219, 249),
+                            ),
+                            onPressed: () {
+                              var t = "Este";
+                              print(t);
+                            },
+                            child: Row(
+                              children: <Widget>[
+                                Icon(Icons.touch_app),
+                                Container(
+                                  height: 120,
+                                  width: 90,
+                                  decoration: BoxDecoration(
+                                      border: Border.all(
+                                          color: Color.fromARGB(
+                                              255, 10, 90, 238))),
+                                  child: FittedBox(
+                                    child: Text(
+                                      "Este",
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                          fontSize: 18.0,
+                                          fontFamily: 'Roboto',
+                                          color:
+                                              Color.fromARGB(255, 3, 134, 241)),
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
-                    ],
-                  ),
+                    ),
+                    Container(
+                      child: Column(
+                        children: [
+                          TextButton(
+                            style: TextButton.styleFrom(
+                              backgroundColor:
+                                  Color.fromARGB(221, 185, 219, 249),
+                            ),
+                            onPressed: () {
+                              var t = "Es";
+                              print(t);
+                            },
+                            child: Row(
+                              children: <Widget>[
+                                Icon(Icons.bug_report),
+                                Container(
+                                  height: 120,
+                                  width: 90,
+                                  decoration: BoxDecoration(
+                                      border: Border.all(
+                                          color: Color.fromARGB(
+                                              255, 10, 90, 238))),
+                                  child: FittedBox(
+                                    child: Text(
+                                      "Es",
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                          fontSize: 18.0,
+                                          fontFamily: 'Roboto',
+                                          color:
+                                              Color.fromARGB(255, 3, 134, 241)),
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      child: Column(
+                        children: [
+                          TextButton(
+                            style: TextButton.styleFrom(
+                              backgroundColor:
+                                  Color.fromARGB(221, 185, 219, 249),
+                            ),
+                            onPressed: () {
+                              var t = "El";
+                              print(t);
+                            },
+                            child: Row(
+                              children: <Widget>[
+                                Icon(Icons.android),
+                                Container(
+                                  height: 120,
+                                  width: 90,
+                                  decoration: BoxDecoration(
+                                      border: Border.all(
+                                          color: Color.fromARGB(
+                                              255, 10, 90, 238))),
+                                  child: FittedBox(
+                                    child: Text(
+                                      "El",
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                          fontSize: 18.0,
+                                          fontFamily: 'Roboto',
+                                          color:
+                                              Color.fromARGB(255, 3, 134, 241)),
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
                 ),
-                Container(
-                  child: Column(
-                    children: [
-                      TextButton(
-                        style: TextButton.styleFrom(
-                          backgroundColor: Color.fromARGB(221, 185, 219, 249),
-                        ),
-                        onPressed: () {
-                          var t = DateTime.now();
-                          print(t);
-                        },
-                        child: Row(
-                          children: <Widget>[
-                            Icon(Icons.access_time),
-                            Container(
-                              height: 120,
-                              width: 100,
-                              decoration: BoxDecoration(
-                                  border: Border.all(
-                                      color: Color.fromARGB(255, 10, 90, 238))),
-                              child: FittedBox(
-                                child: Text(
-                                  "T",
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                      color: Color.fromARGB(255, 3, 134, 241)),
-                                ),
-                              ),
-                            )
-                          ],
-                        ),
+                Row(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Container(
+                      child: Column(
+                        children: [
+                          TextButton(
+                            style: TextButton.styleFrom(
+                              backgroundColor:
+                                  Color.fromARGB(221, 185, 219, 249),
+                            ),
+                            onPressed: () {
+                              var t = "Parcial";
+                              print(t);
+                            },
+                            child: Row(
+                              children: <Widget>[
+                                Icon(Icons.touch_app),
+                                Container(
+                                  height: 120,
+                                  width: 90,
+                                  decoration: BoxDecoration(
+                                      border: Border.all(
+                                          color: Color.fromARGB(
+                                              255, 10, 90, 238))),
+                                  child: FittedBox(
+                                    child: Text(
+                                      "Parcial",
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                          fontSize: 18.0,
+                                          fontFamily: 'Roboto',
+                                          color:
+                                              Color.fromARGB(255, 3, 134, 241)),
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
-                    ],
-                  ),
+                    ),
+                    Container(
+                      child: Column(
+                        children: [
+                          TextButton(
+                            style: TextButton.styleFrom(
+                              backgroundColor:
+                                  Color.fromARGB(221, 185, 219, 249),
+                            ),
+                            onPressed: () {
+                              var t = "De";
+                              print(t);
+                            },
+                            child: Row(
+                              children: <Widget>[
+                                Icon(Icons.bug_report),
+                                Container(
+                                  height: 120,
+                                  width: 90,
+                                  decoration: BoxDecoration(
+                                      border: Border.all(
+                                          color: Color.fromARGB(
+                                              255, 10, 90, 238))),
+                                  child: FittedBox(
+                                    child: Text(
+                                      "De",
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                          fontSize: 18.0,
+                                          fontFamily: 'Roboto',
+                                          color:
+                                              Color.fromARGB(255, 3, 134, 241)),
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      child: Column(
+                        children: [
+                          TextButton(
+                            style: TextButton.styleFrom(
+                              backgroundColor:
+                                  Color.fromARGB(221, 185, 219, 249),
+                            ),
+                            onPressed: () {
+                              var t = "Oskar";
+                              print(t);
+                            },
+                            child: Row(
+                              children: <Widget>[
+                                Icon(Icons.android),
+                                Container(
+                                  height: 120,
+                                  width: 90,
+                                  decoration: BoxDecoration(
+                                      border: Border.all(
+                                          color: Color.fromARGB(
+                                              255, 10, 90, 238))),
+                                  child: FittedBox(
+                                    child: Text(
+                                      "Oskar",
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                          fontSize: 18.0,
+                                          fontFamily: 'Roboto',
+                                          color:
+                                              Color.fromARGB(255, 3, 134, 241)),
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
                 ),
-                Container(
-                  child: Column(
-                    children: [
-                      TextButton(
-                        style: TextButton.styleFrom(
-                          backgroundColor: Color.fromARGB(221, 185, 219, 249),
-                        ),
-                        onPressed: () {
-                          var t = DateTime.now();
-                          print(t);
-                        },
-                        child: Row(
-                          children: <Widget>[
-                            Icon(Icons.access_time),
-                            Container(
-                              height: 120,
-                              width: 100,
-                              decoration: BoxDecoration(
-                                  border: Border.all(
-                                      color: Color.fromARGB(255, 10, 90, 238))),
-                              child: FittedBox(
-                                child: Text(
-                                  "C",
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                      color: Color.fromARGB(255, 3, 134, 241)),
-                                ),
-                              ),
-                            )
-                          ],
-                        ),
+                Row(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Container(
+                      child: Column(
+                        children: [
+                          TextButton(
+                            style: TextButton.styleFrom(
+                              backgroundColor:
+                                  Color.fromARGB(221, 185, 219, 249),
+                            ),
+                            onPressed: () {
+                              var t = "Bryan";
+                              print(t);
+                            },
+                            child: Row(
+                              children: <Widget>[
+                                Icon(Icons.touch_app),
+                                Container(
+                                  height: 120,
+                                  width: 90,
+                                  decoration: BoxDecoration(
+                                      border: Border.all(
+                                          color: Color.fromARGB(
+                                              255, 10, 90, 238))),
+                                  child: FittedBox(
+                                    child: Text(
+                                      "Bryan",
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                          fontSize: 18.0,
+                                          fontFamily: 'Roboto',
+                                          color:
+                                              Color.fromARGB(255, 3, 134, 241)),
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
-                    ],
-                  ),
+                    ),
+                    Container(
+                      child: Column(
+                        children: [
+                          TextButton(
+                            style: TextButton.styleFrom(
+                              backgroundColor:
+                                  Color.fromARGB(221, 185, 219, 249),
+                            ),
+                            onPressed: () {
+                              var t = "Xiadamy";
+                              print(t);
+                            },
+                            child: Row(
+                              children: <Widget>[
+                                Icon(Icons.bug_report),
+                                Container(
+                                  height: 120,
+                                  width: 90,
+                                  decoration: BoxDecoration(
+                                      border: Border.all(
+                                          color: Color.fromARGB(
+                                              255, 10, 90, 238))),
+                                  child: FittedBox(
+                                    child: Text(
+                                      "Xiadamy",
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                          fontSize: 18.0,
+                                          fontFamily: 'Roboto',
+                                          color:
+                                              Color.fromARGB(255, 3, 134, 241)),
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      child: Column(
+                        children: [
+                          TextButton(
+                            style: TextButton.styleFrom(
+                              backgroundColor:
+                                  Color.fromARGB(221, 185, 219, 249),
+                            ),
+                            onPressed: () {
+                              var t = "Carrillo";
+                              print(t);
+                            },
+                            child: Row(
+                              children: <Widget>[
+                                Icon(Icons.android),
+                                Container(
+                                  height: 120,
+                                  width: 90,
+                                  decoration: BoxDecoration(
+                                      border: Border.all(
+                                          color: Color.fromARGB(
+                                              255, 10, 90, 238))),
+                                  child: FittedBox(
+                                    child: Text(
+                                      "Carrillo",
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                          fontSize: 18.0,
+                                          fontFamily: 'Roboto',
+                                          color:
+                                              Color.fromARGB(255, 3, 134, 241)),
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+                Row(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Container(
+                      child: Column(
+                        children: [
+                          TextButton(
+                            style: TextButton.styleFrom(
+                              backgroundColor:
+                                  Color.fromARGB(221, 185, 219, 249),
+                            ),
+                            onPressed: () {
+                              var t = "Guevara";
+                              print(t);
+                            },
+                            child: Row(
+                              children: <Widget>[
+                                Icon(Icons.touch_app),
+                                Container(
+                                  height: 120,
+                                  width: 90,
+                                  decoration: BoxDecoration(
+                                      border: Border.all(
+                                          color: Color.fromARGB(
+                                              255, 10, 90, 238))),
+                                  child: FittedBox(
+                                    child: Text(
+                                      "Guevara",
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                          fontSize: 18.0,
+                                          fontFamily: 'Roboto',
+                                          color:
+                                              Color.fromARGB(255, 3, 134, 241)),
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      child: Column(
+                        children: [
+                          TextButton(
+                            style: TextButton.styleFrom(
+                              backgroundColor:
+                                  Color.fromARGB(221, 185, 219, 249),
+                            ),
+                            onPressed: () {
+                              var t = "Programación";
+                              print(t);
+                            },
+                            child: Row(
+                              children: <Widget>[
+                                Icon(Icons.bug_report),
+                                Container(
+                                  height: 120,
+                                  width: 90,
+                                  decoration: BoxDecoration(
+                                      border: Border.all(
+                                          color: Color.fromARGB(
+                                              255, 10, 90, 238))),
+                                  child: FittedBox(
+                                    child: Text(
+                                      "Programación",
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                          fontSize: 18.0,
+                                          fontFamily: 'Roboto',
+                                          color:
+                                              Color.fromARGB(255, 3, 134, 241)),
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      child: Column(
+                        children: [
+                          TextButton(
+                            style: TextButton.styleFrom(
+                              backgroundColor:
+                                  Color.fromARGB(221, 185, 219, 249),
+                            ),
+                            onPressed: () {
+                              var t = "Movil";
+                              print(t);
+                            },
+                            child: Row(
+                              children: <Widget>[
+                                Icon(Icons.android),
+                                Container(
+                                  height: 120,
+                                  width: 90,
+                                  decoration: BoxDecoration(
+                                      border: Border.all(
+                                          color: Color.fromARGB(
+                                              255, 10, 90, 238))),
+                                  child: FittedBox(
+                                    child: Text(
+                                      "Movil",
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                          fontSize: 18.0,
+                                          fontFamily: 'Roboto',
+                                          color:
+                                              Color.fromARGB(255, 3, 134, 241)),
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),
